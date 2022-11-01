@@ -11,3 +11,11 @@ jar {
         attributes 'Main-Class': 'org.example.Main'
     }
 }
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
